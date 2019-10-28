@@ -14,6 +14,7 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+
 }
 
 a {
@@ -56,7 +57,7 @@ h6 {
   padding: 2px 20px 8px 20px;
   font-size: 16px;
   border-radius: 4px 4px 0 0;
-  right: 15px;
+  right: 140px;
   bottom: 0;
   transition: none;
 }
@@ -114,9 +115,10 @@ h6 {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, #5bafd3, #eeadb5);
   padding: 20px 0;
   height: 72px;
+  width: auto;
   transition: all 0.5s;
 }
 
@@ -384,7 +386,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(198, 105, 168, 0.9);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -445,7 +447,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(149, 197, 230, 0.59);
   display: none;
 }
 
@@ -533,6 +535,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 350px;
  }
 
+#foto7 {
+  height: 100px;
+  width: 100px;
+  margin-left: 160px;
+}
+
 #apoio1{
   width: 120px;
   height: 120px;
@@ -578,7 +586,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   line-height: 26px;
   width: auto;
-  height: 290px;
   font-style: italic;
   text-align: center;
   font-size: 25px;
@@ -644,7 +651,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #features .icon i:before {
   background: #1dc8cd;
-  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background: linear-gradient(50deg, #FFC0CB 0%, #3c4fd8 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1095,10 +1102,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 0px 190px 500px;
+  padding: 60px 0px 40px 0px;
   margin-top: -40px;
   overflow: hidden;
-  height: 200px;
+  height: auto;
 }
 
 #contact .contact-about h3 {
@@ -1110,7 +1117,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #1dc8cd;
+  color: #64a0fa;
 }
 
 #contact .contact-about p {
@@ -1128,20 +1135,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #1dc8cd;
+  color: #6893fa;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 100px;
+  margin-right: 10px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #1dc8cd;
+  border: 1px solid #6893fa;
 }
 
 #contact .social-links a:hover {
-  background: #1dc8cd;
+  background: #0891cd;
   color: #fff;
 }
 
@@ -1151,7 +1158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: #1dc8cd;
+  color: #327ccd;
   float: left;
   line-height: 1;
 }
@@ -1225,7 +1232,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 768px) {
   #header #logo h1 {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 0;
   }
 
