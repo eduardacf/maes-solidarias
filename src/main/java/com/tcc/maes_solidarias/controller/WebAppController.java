@@ -27,6 +27,16 @@ public class WebAppController {
 
         return "index";
     }
+
+    @RequestMapping("/admin")
+    public String teste(Model model){
+        model.addAttribute("datetime", new Date());
+        model.addAttribute("username", "@omeryazir");
+
+        model.addAttribute("mode", appMode);
+
+        return "admin";
+    }
 }
 
 
