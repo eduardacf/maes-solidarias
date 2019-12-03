@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Admin</title>
     <meta charset="UTF-8">
@@ -29,13 +29,26 @@
 </head>
 <body>
 
+
 <div class="limiter">
     <div class="container-login100" style="background-image: url('../admin/images/bg-01.jpg');">
         <div class="wrap-login100">
-            <form method="POST" class="login100-form validate-form">
+            <div class="container">
+
+
+            <form method="POST" class="login100-form validate-form" th:action="@{/login}">
 					<span class="login100-form-logo">
                          <i class="zmdi zmdi-accounts-alt"></i>
 					</span>
+
+                <div th:if="${param.error}">
+                    <div class="alert alert-danger">Your username and password is
+                        invalid.</div>
+                </div>
+                <div th:if="${param.message}">
+                    <div class="alert alert-info">You have been logged out
+                        successfully.</div>
+                </div>
 
                 <span class="login100-form-title p-b-34 p-t-27">
 						Acesso

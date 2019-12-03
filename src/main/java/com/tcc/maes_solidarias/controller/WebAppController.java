@@ -11,32 +11,16 @@ import java.util.Date;
 @Controller
 public class WebAppController {
 
-    private String appMode;
-
-    @Autowired
-    public WebAppController(Environment environment){
-        appMode = environment.getProperty("app-mode");
-    }
-
     @RequestMapping("/")
-    public String index(Model model){
-        model.addAttribute("datetime", new Date());
-        model.addAttribute("username", "@omeryazir");
-
-        model.addAttribute("mode", appMode);
-
+    public String index(Model model) {
         return "index";
     }
 
     @RequestMapping("/admin")
-    public String teste(Model model){
-        model.addAttribute("datetime", new Date());
-        model.addAttribute("username", "@omeryazir");
-
-        model.addAttribute("mode", appMode);
-
+    public String acessoAdmin(Model model) {
         return "admin";
     }
+
 }
 
 
