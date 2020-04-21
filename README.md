@@ -1,8 +1,8 @@
 
 ## APOIE - Sistema de Gerenciamento para Projetos Sociais
 
-**Tecnologias Utilizadas:
-**
+**Tecnologias Utilizadas:**
+
 - Spring Boot
 
 - Spring data jpa
